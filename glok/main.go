@@ -86,7 +86,8 @@ func main() {
 	digits := [...][5]string{zero, one, two, three, four, five, six, seven, eight, nine}
 	screen.Clear()
 	for {
-
+        screen.Clear()
+		screen.MoveTopLeft()
 		hour := time.Now().Hour()
 		minute := time.Now().Minute()
 		second := time.Now().Second()
@@ -107,7 +108,6 @@ func main() {
 		}
 		fmt.Println()
 		time.Sleep(1 * time.Second)
-		screen.Clear()
-		screen.MoveTopLeft()
+		
 	}
 }
