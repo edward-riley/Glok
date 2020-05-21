@@ -49,7 +49,9 @@ sudo cp /path/to/glok/binary/ /usr/bin/
 #### Windows:
 I reccomend just placing the windows exe in somewhere like C:\Program Files\Glock\
 Then, if you're on CommandPrompt:
-SET "PATH=C:\Program Files\Glok"     
+SET "PATH=C:\Program Files\Glok"   
+if you're on Powershell:
+$env:path = $env:path + ";C:\Program Files\Glok"
 or wherever you put it
 
 
@@ -59,5 +61,4 @@ i would be extremely gratefull if somebody would test it for me on that platform
 CREDITS:
 https://github.com/inancgumus/  For his extremely usefull screen library
 Bevan on stack overflow for this comment that helped me add a binary to the windows path varible
-https://stackoverflow.com/a/57590647
-
+https://stackoverflow.com/questions/4822400/register-an-exe-so-you-can-run-it-from-any-command-line-in-windows
