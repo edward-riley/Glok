@@ -5,18 +5,18 @@ import "github.com/inancgumus/screen"
 
 func main() {
 	zero := [5]string{
-		"█ █ █",
+		" ███ ",
 		"█   █",
 		"█   █",
 		"█   █",
-		"█ █ █",
+		" ███ ",
 	}
 	one := [5]string{
 		"███  ",
 		"  █  ",
 		"  █  ",
 		"  █  ",
-		"█ █ █",
+		"█████",
 	}
 
 	two := [5]string{
