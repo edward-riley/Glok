@@ -10,13 +10,15 @@ https://github.com/edward-riley/Glok/tree/master/glok/Binaries
 
 ### Linux / Mac Installation:
 You can input this command to make glok avalible on the command line:
+
 sudo cp /path/to/glok/binary/ /usr/bin/
 
 ### Windows:
 I reccomend just placing the windows exe in somewhere like C:\Program Files\Glock\
 Then, if you're on CommandPrompt:
 SET "PATH=C:\Program Files\Glok"     
-or wherever you put it
+if you're on Powershell:
+$env:path = $env:path + ";C:\Program Files\Glok"
 
 ## Install from source (probably best for people who know what they are doing)
 Requirements: 
@@ -52,7 +54,7 @@ Then, if you're on CommandPrompt:
 SET "PATH=C:\Program Files\Glok"   
 if you're on Powershell:
 $env:path = $env:path + ";C:\Program Files\Glok"
-or wherever you put it
+
 
 
 I know for a fact that this works currently on Linux and windows, but as i have never used macOS,
