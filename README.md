@@ -1,6 +1,9 @@
 # Glok
 Glok! a simple cross-platform  clock for the command line, written in go
 
+# Usage
+Open a command shell, type glok
+and you've got a simple clcok for your desktop!
 
 # Installation:
 ## Install from Binary
