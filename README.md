@@ -5,64 +5,71 @@ Glok! a simple cross-platform  clock for the command line, written in go
 
 # Usage
 Open a command shell, type glok
+
 and you've got a simple clock for your desktop!
 
 # Installation:
-## Install from Binary
-To install Glok, you can grab the binary release here:
 
-https://github.com/edward-riley/Glok/releases
+Grab a binary from the [releases section](https://github.com/edward-riley/Glok/releases):
 
-### Linux / Mac Installation:
-You can input this command to make glok avalible on the command line:
+
+## Unix-like:
+
+### System Wide
+```sh
 sudo chmod +x /path/to/glok
-sudo cp /path/to/glok/binary/ /usr/bin/
+sudo cp /path/to/glok /usr/local/bin
+```
 
-### Windows:
-I reccomend just placing the windows exe in somewhere like C:\Program Files\Glock\
-Then, if you're on CommandPrompt:
+### Locally:
+
+Any changes to the path variable are not permanent, be sure to put them in your bash/zshrc.
+
+#### Linux/BSD: 
+```sh
+chmod +x /path/to/glok
+cp /path/to/glok $HOME/.local/bin
+```
+If it doesn't work after running this, run 
+
+```sh
+export PATH+=":$HOME/.local/bin"
+```
+#### Mac
+
+Not recommended, you should install system-wide on mac
+
+```sh
+chmod +x /path/to/glok
+cp /path/to/glok $HOME/bin/
+export PATH+=:$HOME/bin/
+```
+
+
+## Windows:
+Place the .exe file in  C:\Program Files\Glok\
+
+### Command Prompt:
+```batch
 SET "PATH=C:\Program Files\Glok"     
-if you're on Powershell:
+```
+### Powershell:
+```powershell
 $env:path = $env:path + ";C:\Program Files\Glok"
-
-## Install from source (probably best for people who know what they are doing)
-Requirements: 
-https://github.com/inancgumus/screen (see the link on how to install)
-Go (any version)
+```
+# Building from source
+## Dependencies:  
+Go (any version)  
 Git
 
-#### in your terminal/cmd/powershell type: git clone https://github.com/edward-riley/Glok/
-this should download glok into  C:\users\$USER     on windows
-and  /home/$USER/     on Linux/Mac
+## Building
 
-#### Be sure to place the glok folder in your go src path, which on linux/macos should be:
-#### /home/$USER/go/src/
-
-#### and on windows should be:
-#### C:\User\ $USER\go\src
-
-If there is now src directory inside your gopath, just make one
-
-Now on all platforms you should open up cmd/powershell/terminal and type:
-
-#### go build -o glok
-
-you should then see the glok binary in your glok directory
-
-#### Linux / Mac Installation:
-You can input this command to make glok avalible on the command line:
-sudo cp /path/to/glok/binary/ /usr/bin/
-
-#### Windows:
-I reccomend just placing the windows exe in somewhere like C:\Program Files\Glock\
-Then, if you're on CommandPrompt:
-SET "PATH=C:\Program Files\Glok"   
-if you're on Powershell:
-$env:path = $env:path + ";C:\Program Files\Glok"
+Run `go build` inside the project directory, then follow the steps inside the install section to allow you to use the newly built binary.
 
 
 
 I know for a fact that this works currently on Linux and windows, but as i have never used macOS,
+
 i would be extremely gratefull if somebody would test it for me on that platform!
 
 CREDITS:
