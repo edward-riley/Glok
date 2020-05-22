@@ -5,6 +5,7 @@ Glok! a simple cross-platform  clock for the command line, written in go
 
 # Usage
 Open a command shell, type glok
+
 and you've got a simple clock for your desktop!
 
 # Installation:
@@ -49,10 +50,13 @@ export PATH+=:$HOME/bin/
 Place the .exe file in  C:\Program Files\Glok\
 
 ### Command Prompt:
+```batch
 SET "PATH=C:\Program Files\Glok"     
+```
 ### Powershell:
+```powershell
 $env:path = $env:path + ";C:\Program Files\Glok"
-
+```
 # Building from source
 ## Dependencies:  
 Go (any version)  
@@ -65,6 +69,7 @@ Run `go build` inside the project directory, then follow the steps inside the in
 
 
 I know for a fact that this works currently on Linux and windows, but as i have never used macOS,
+
 i would be extremely gratefull if somebody would test it for me on that platform!
 
 CREDITS:
