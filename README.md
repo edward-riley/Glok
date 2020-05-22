@@ -76,3 +76,4 @@ CREDITS:
 https://github.com/inancgumus/  For his extremely usefull screen library
 Bevan on stack overflow for this comment that helped me add a binary to the windows path varible
 https://stackoverflow.com/questions/4822400/register-an-exe-so-you-can-run-it-from-any-command-line-in-windows
+https://github.com/Henry0w For the exellent Documentation, and he has also been a huge help overall :)
