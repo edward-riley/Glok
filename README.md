@@ -13,7 +13,7 @@ https://github.com/edward-riley/Glok/tree/master/glok/Binaries
 
 ### Linux / Mac Installation:
 You can input this command to make glok avalible on the command line:
-
+sudo chmod +x /path/to/glok
 sudo cp /path/to/glok/binary/ /usr/bin/
 
 ### Windows:
