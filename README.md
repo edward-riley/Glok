@@ -11,7 +11,7 @@ and you've got a simple clock for your desktop!
 ## Install from Binary
 To install Glok, you can grab the binary release here:
 
-https://github.com/edward-riley/Glok/tree/master/glok/Binaries
+https://github.com/edward-riley/Glok/releases
 
 ### Linux / Mac Installation:
 You can input this command to make glok avalible on the command line:
