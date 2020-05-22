@@ -1,6 +1,7 @@
 # Glok
 Glok! a simple cross-platform  clock for the command line, written in go
-thanks to https://github.com/Henry0w For the exellent Documentation, and he has also been a huge help overall :)
+
+Special thanks to https://github.com/Henry0w For the exellent Documentation, and he has also been a huge help overall :)
 
 
 # Usage
