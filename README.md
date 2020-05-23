@@ -34,7 +34,7 @@ cp /path/to/glok $HOME/.local/bin
 If it doesn't work after running this, run 
 
 ```sh
-export PATH+=":$HOME/.local/bin"
+export PATH=$PATH:"$HOME/.local/bin"
 ```
 #### Mac
 
@@ -43,7 +43,7 @@ Not recommended, you should install system-wide on mac
 ```sh
 chmod +x /path/to/glok
 cp /path/to/glok $HOME/bin/
-export PATH+=:$HOME/bin/
+export PATH=$PATH:"$HOME/.local/bin"
 ```
 
 
