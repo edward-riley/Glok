@@ -1,22 +1,26 @@
 package main
-import "fmt"
-import "time"
-import "github.com/inancgumus/screen"
+
+import (
+	"fmt"
+	"time"
+
+	"github.com/inancgumus/screen"
+)
 
 func main() {
 	zero := [5]string{
-		" ███ ",
+		" █ █ ",
 		"█   █",
 		"█   █",
 		"█   █",
-		" ███ ",
+		" █ █ ",
 	}
 	one := [5]string{
-		"███  ",
+		"█ █  ",
 		"  █  ",
 		"  █  ",
 		"  █  ",
-		"█████",
+		"█ █ █",
 	}
 
 	two := [5]string{
@@ -86,7 +90,7 @@ func main() {
 	digits := [...][5]string{zero, one, two, three, four, five, six, seven, eight, nine}
 	screen.Clear()
 	for {
-        screen.Clear()
+		screen.Clear()
 		screen.MoveTopLeft()
 		hour := time.Now().Hour()
 		minute := time.Now().Minute()
@@ -108,6 +112,6 @@ func main() {
 		}
 		fmt.Println()
 		time.Sleep(1 * time.Second)
-		
+
 	}
 }
